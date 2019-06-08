@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+
+    <div class="panel-heading"> 
+
+        Performance Test - Calc the first {{amount}} prime numbers
+
+        <button (click)="startTest()" type="button" class="btn btn-default btn-sm" >
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </button>
+        <button (click)="clearTest()" type="button" class="btn btn-default btn-sm" >
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+
+        Time: {{ elapsedtime }} milliseconds
+    </div>
+
+    <div class="panel-body">
+
+        <div class="badge prime"
+            *ngFor="let number of numbers">            
+            {{number}}
+        </div>
+
+    </div>
+
+</div>    
